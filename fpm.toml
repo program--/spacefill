@@ -1,0 +1,19 @@
+name = "spacefill"
+version = "0.1.0"
+license = "MIT"
+author = "Justin Singh-Mohudpur"
+maintainer = "justin@justinsingh.me"
+copyright = "Copyright 2023, Justin Singh-Mohudpur"
+keywords = ["space-filling curves", "hilbert", "morton", "peano"]
+homepage = "https://spacefill.justinsingh.me"
+
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+
+[install]
+library = true
+
+[dev-dependencies]
+veggies = { git = "https://gitlab.com/everythingfunctional/veggies.git", tag = "v1.0.0" }
