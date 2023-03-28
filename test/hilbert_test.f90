@@ -5,9 +5,8 @@ module hilbert_test
    private
    public :: test_hilbert
 contains
-   function test_hilbert() result(tests)
-      type(test_item_t) :: tests
-      tests = describe("hc", [&
+   type(test_item_t) function test_hilbert() result(tests)
+      tests = describe("Hilbert Curve", [&
          it( "returns hilbert indices for given coordinates", check_hc), &
          it( "returns coordinates given hilbert indices", check_ihc) &
          ])

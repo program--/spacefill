@@ -4,7 +4,7 @@ module spacefill_hilbert
 
    public :: hc, ihc
 contains
-   elemental integer function hc(n, x, y)
+   pure elemental integer function hc(n, x, y)
       integer, intent(in) :: n
       integer, value :: x, y
       integer :: rx, ry, s
@@ -19,7 +19,7 @@ contains
       end do
    end function
 
-   elemental subroutine ihc(n, h, x, y)
+   pure elemental subroutine ihc(n, h, x, y)
       integer, intent(in) :: n
       integer, value :: h
       integer, intent(out) :: x, y
@@ -39,7 +39,7 @@ contains
       end do
    end subroutine
 
-   elemental subroutine rotate(n, x, y, rx, ry)
+   pure elemental subroutine rotate(n, x, y, rx, ry)
       integer, intent(in) :: n, rx, ry
       integer, intent(inout) :: x, y
       integer :: temp

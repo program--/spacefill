@@ -1,5 +1,7 @@
 {
   "editor.formatOnSave": true,
-  "fortran.linter.compilerPath": "",
-  "fortran.linter.includePaths": ["${workspaceFolder}/src"]
+  "fortran.linter.includePaths": [
+    "${workspaceFolder}/src",
+    "${workspaceFolder}/build/gfortran*"
+  ]
 }
